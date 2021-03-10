@@ -1,19 +1,17 @@
 
 import { Container, Col, Row } from "react-bootstrap";
-import "./estilos.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 
 function App() {
   return (
     <>
-      <Container fluid="md" as="body" className="d-flex flex-column contenedor" >
-        <Row as="header" className="align-item-center text-white px-3">
+      <Container fluid="md" className="d-flex flex-column contenedor " >
+        <Row as="header" className="d-flex align-item-center text-white">
           <Col as="h1" className="titulo">Título</Col>
         </Row>
 
         <Row as="main">
-          <Col as="article" sm={12} md={8} className="pb-5">
+          <Col as="article" lg={8} md={8} sm={12} xs={12} className="pb-5">
             <h2 className="titular">Titular de la noticia</h2>
             <p className="textos">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -29,7 +27,7 @@ function App() {
           </p>
           </Col>
 
-          <Col as="aside" sm={12} md={4} className="pb-5" >
+          <Col as="aside" lg={4} md={4} sm={12} xs={12} className="pb-5" >
             <h3 className="titular">Categorías</h3>
             <ul>
               <li>Noticias de deporte</li>
@@ -46,7 +44,7 @@ function App() {
           </Col>
         </Row>
         <Row as="footer" sm={12} className="justify-content-center aling-item-center text-white pt-4">
-          <p className="texto-footer">Texto del footer</p>
+          <Col as="p" className="text-center texto-footer">Texto del footer</Col>
         </Row>
       </Container >
     </>
